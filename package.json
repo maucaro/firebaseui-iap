@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "firebaseui": "^6.1.0",
+    "gcip-iap": "^2.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "esmify": "^2.1.1"
+  },
+  "scripts": {
+    "build": "browserify src/fbui.js -p esmify > public/bundle.js",
+    "deploy": "firebase deploy --only hosting"
+  }
+}
